@@ -1,0 +1,75 @@
+:root {
+  --ink: #222;
+  --muted: #5c5c5c;
+  --line: #dedede;
+  --soft: #f7f8f7;
+  --accent: #4d5f54;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+}
+body { line-height: 1.6; }
+.wordmark, .profile-name, h1, h2, h3, .email-link, .evaluation > span, .orcid-mark {
+  font-family: "Times New Roman", Times, serif;
+}
+.header-inner { height: 72px; max-width: 1180px; }
+.wordmark { font-size: 26px; font-weight: 600; }
+.wordmark-dot { display: none; }
+nav a { font-size: 16px; color: #454545; border-bottom-width: 1px; }
+.page-layout { max-width: 1180px; grid-template-columns: 200px minmax(0,1fr); padding-top: 44px; gap: 64px; }
+.portrait { width: 176px; height: 176px; }
+h1 { font-size: 43px; line-height: 1.15; margin-bottom: 18px; }
+h2 { font-size: 29px; }
+h3, .publication h3 { font-size: 22px; line-height: 1.35; font-weight: 600; }
+.featured h3 { font-size: 25px; }
+.illustrated-paper { display: grid; grid-template-columns: minmax(0,1fr) 244px; gap: 30px; align-items: start; }
+.paper-copy { min-width: 0; }
+.paper { padding-top: 29px; padding-bottom: 29px; }
+.paper-summary { max-width: 590px; }
+.section { padding-bottom: 34px; margin-bottom: 34px; }
+.about { padding-bottom: 30px; margin-bottom: 30px; }
+.intro { font-size: 21px; color: #333; line-height: 1.55; }
+.about > p:not(.eyebrow):not(.intro), .paper-summary { font-size: 17px; line-height: 1.7; color: #414141; }
+.profile-position { font-size: 16px; }
+.profile-affiliation, .profile-location, .profile-links, .sidebar-fields p { font-size: 15px; }
+.profile-name { font-size: 24px; }
+.small-label, .eyebrow, .paper-label { font-size: 14px; letter-spacing: 0; text-transform: none; font-weight: 400; }
+.eyebrow { color: var(--muted); margin-bottom: 15px; }
+.paper-label { font-style: italic; margin-bottom: 8px; }
+.paper-meta, .publication-journal { font-size: 15px; }
+.section-aside, .contribution { font-size: 14px; }
+.intro-links, .paper-actions, .text-button, .inline-download { font-size: 15px; }
+.primary-link { background: #fff; color: var(--green); border: 1px solid #a9b8ad; border-radius: 2px; padding: 7px 13px; }
+.primary-link:hover { background: #f4f6f4; color: var(--green); }
+.abstract-body { background: #fafafa; border-left: 1px solid #bac3bd; font-size: 16px; line-height: 1.7; }
+.research-figure figcaption { font-size: 14px; line-height: 1.45; }
+.research-figure figcaption strong { font-size: 14px; font-weight: 400; color: var(--muted); }
+.figure-expand { font-size: 14px; margin-top: 4px; }
+.teaching-record p, .teaching-record .paper-meta, .teaching-interests, .methods { font-size: 16px; }
+.teaching-interests strong, .methods strong { font-size: 16px; font-weight: 600; }
+.evaluation small { font-size: 14px; }
+.education dt { font-size: 17px; }
+.education dd, .education dd span { font-size: 15px; }
+.contact > p, .contact .contact-affiliation { font-size: 16px; }
+.site-footer { font-size: 13px; }
+@media (max-width: 1100px) { .page-layout { gap: 38px; grid-template-columns: 176px minmax(0,1fr); } .illustrated-paper { grid-template-columns: minmax(0,1fr) 210px; gap: 24px; } }
+@media (max-width: 900px) and (min-width: 721px) { .illustrated-paper { display: block; } .research-figure { max-width: 260px; margin-top: 18px; } }
+@media (max-width: 720px) {
+  .header-inner { height: 64px; }
+  .page-layout { padding-top: 26px; display: block; }
+  .portrait { width: 100px; height: 100px; }
+  .profile { margin-bottom: 26px; padding-bottom: 20px; }
+  .illustrated-paper { display: block; }
+  nav a { font-size: 17px; }
+  h1 { font-size: 39px; }
+  h2 { font-size: 27px; }
+  .paper h3, .publication h3 { font-size: 23px; }
+  .featured h3 { font-size: 25px; }
+  .eyebrow { display: none; }
+  .intro { font-size: 20px; }
+  .about > p:not(.eyebrow):not(.intro), .paper-summary { font-size: 17px; line-height: 1.65; }
+  .profile-position { font-size: 15px; }
+  .profile-affiliation, .profile-location { font-size: 13px; }
+  .research-figure figcaption { font-size: 14px; }
+  .section-aside { font-size: 13px; }
+  .evaluation small { font-size: 13px; }
+}
