@@ -85,37 +85,12 @@ h2 { color: #20558f; }
 ::selection { background: #d9ecff; color: #173f6e; }
 
 
-/* A stronger blue identity across the page. */
-:root { --blue: #075bc4; --accent: #075bc4; --line: #c8ddf6; --soft: #eaf3ff; }
-body { background: #edf5ff; }
-.site-header { background: #104fb0; border-bottom: 1px solid #104fb0; }
-.site-header .wordmark, .site-header nav a { color: #fff; }
-.site-header nav a:hover, .site-header nav a[aria-current="location"] { color: #fff; border-color: #9ed8ff; }
-.site-header .nav-toggle { background: #104fb0; color: #fff; border-color: #78a8e9; }
-.page-layout { padding-bottom: 28px; }
-.profile { background: #1558b5; padding: 18px; border-radius: 12px; color: #fff; }
-.profile .portrait { width: 100%; height: auto; aspect-ratio: 1; border: 3px solid #94cfff; }
-.profile .profile-name, .profile .profile-name [lang="zh"], .profile .profile-affiliation,
-.profile .profile-location, .profile .small-label, .profile .profile-links a { color: #fff; }
-.profile .sidebar-fields { border-color: #75a7e8; }
-.profile .orcid-mark { border-color: #fff; }
-.profile a:hover { color: #ccecff; }
-main { background: #fff; padding: 28px; border: 1px solid #d5e6fa; border-radius: 12px; }
-h1 { color: #104fb0; }
-h2 { color: #075bc4; }
+/* Blue accents with light, open surfaces. */
+:root { --blue: #075bc4; --accent: #075bc4; --line: #dbe7f5; --soft: #f2f7ff; }
+body { background: #fff; }
+.site-header { border-top: 3px solid #2784ed; }
+h1 { color: #174f8d; }
 .primary-link { background: #075bc4; color: #fff; border-color: #075bc4; }
 .primary-link:hover { background: #06489c; color: #fff; }
-.abstract-body { background: #eaf3ff; border-left: 3px solid #348afa; }
-::selection { background: #afd7ff; color: #103e79; }
-@media (max-width: 720px) {
-  .site-header nav { background: #104fb0; }
-  .site-header nav a:hover, .site-header nav a[aria-current="location"] { background: #1d63c6; }
-  .profile { padding: 18px; border-bottom: 0; }
-  .profile .portrait { width: 100px; height: 100px; }
-  main { padding: 22px 18px; }
-  .page-layout { padding-left: 14px; padding-right: 14px; }
-}
-@media print {
-  body { background: #fff; }
-  main { padding: 0; border: 0; border-radius: 0; }
-}
+.profile .portrait { border: 2px solid #d1e6ff; }
+.abstract-body { background: #f2f7ff; border-left: 2px solid #83b5e7; }
