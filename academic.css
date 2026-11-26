@@ -1,9 +1,11 @@
 :root {
   --ink: #222;
-  --muted: #5c5c5c;
-  --line: #dedede;
-  --soft: #f7f8f7;
-  --accent: #4d5f54;
+  --muted: #586779;
+  --blue: #1769c2;
+  --green: var(--blue);
+  --line: #dce6f1;
+  --soft: #f0f7ff;
+  --accent: var(--blue);
   font-family: "Times New Roman", Times, serif;
   font-size: 17px;
 }
@@ -38,9 +40,9 @@ h3, .publication h3 { font-size: 22px; line-height: 1.35; font-weight: 600; }
 .paper-meta, .publication-journal { font-size: 15px; }
 .section-aside, .contribution { font-size: 14px; }
 .intro-links, .paper-actions, .text-button, .inline-download { font-size: 15px; }
-.primary-link { background: #fff; color: var(--green); border: 1px solid #a9b8ad; border-radius: 2px; padding: 7px 13px; }
-.primary-link:hover { background: #f4f6f4; color: var(--green); }
-.abstract-body { background: #fafafa; border-left: 1px solid #bac3bd; font-size: 16px; line-height: 1.7; }
+.primary-link { background: #fff; color: var(--green); border: 1px solid #83b5e7; border-radius: 2px; padding: 7px 13px; }
+.primary-link:hover { background: #edf5ff; color: var(--green); }
+.abstract-body { background: var(--soft); border-left: 2px solid #83b5e7; font-size: 16px; line-height: 1.7; }
 .research-figure figcaption { font-size: 14px; line-height: 1.45; }
 .research-figure figcaption strong { font-size: 14px; font-weight: 400; color: var(--muted); }
 .figure-expand { font-size: 14px; margin-top: 4px; }
@@ -73,3 +75,12 @@ h3, .publication h3 { font-size: 22px; line-height: 1.35; font-weight: 600; }
   .section-aside { font-size: 13px; }
   .evaluation small { font-size: 13px; }
 }
+
+/* Blue accents inspired by the owner’s preferred fan-support palette. */
+h2 { color: #20558f; }
+.wordmark { color: #20558f; }
+.contribution, .teaching-record p, .teaching-interests, .methods { color: #536174; }
+.portrait { background: #f0f7ff; }
+.education > div { border-bottom-color: var(--line); }
+::selection { background: #d9ecff; color: #173f6e; }
+
